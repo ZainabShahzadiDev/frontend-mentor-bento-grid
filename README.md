@@ -16,4 +16,4 @@ A responsive **Bento-style grid** built with **HTML & CSS** — showcasing creat
 🔗 [View Project Here](https://zainabshahzadidev.github.io/frontend-mentor-bento-grid/)
 
 ## 🖼️ Preview
-![Bento Grid Preview](./assets/images/Preview%20Screenshot.jpg)
+![Bento Grid Preview](./assets/images/PreviewScreenshot.jpg)
