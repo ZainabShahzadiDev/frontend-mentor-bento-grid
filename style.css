@@ -1,0 +1,440 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    /* variable range */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+}
+
+
+body {
+    background-color: hsla(0, 0%, 87%, 0.4);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20rem 4rem 9.3rem 15.5rem;
+    grid-template-areas: "card7 card1 card1 card4"
+        "card7 card2 card3 card4"
+        "card8 card2 card3 card4"
+        "card8 card6 card5 card5"
+}
+
+.card {
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+}
+
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card6 {
+    grid-area: card6;
+}
+
+.card7 {
+    grid-area: card7;
+}
+
+.card8 {
+    grid-area: card8;
+}
+
+.social-media-with-ai {
+    background-color: var(--purple-500);
+    color: var(--white);
+    text-align: center;
+}
+
+.social-media-with-ai h2 {
+    font-weight: 600;
+    padding-top: 2.2rem;
+    padding-bottom: 1.4rem;
+    line-height: 3.7rem;
+    font-size: 3.45em;
+    font-weight: 480;
+}
+
+.social-media-with-ai .x {
+    color: var(--yellow-500);
+}
+
+.social-media-with-ai .faster {
+    letter-spacing: -0.02rem;
+    font-style: italic;
+}
+
+.social-media-with-ai img {
+    height: 2rem;
+}
+
+.manage-platform {
+    background-color: var(--white);
+    color: var(--black);
+    overflow: hidden;
+}
+
+.manage-platform img {
+    height: 6.5vh;
+    box-shadow: 1rem 0.7rem 1rem hsla(0, 0%, 7%, 0.06);
+}
+
+.manage-platform h2 {
+    margin-top: 0.9rem;
+    font-size: 2.04rem;
+    font-weight: 530;
+    line-height: 1.8rem;
+    letter-spacing: -0.1rem;
+}
+
+.maintain-consistent-schedule {
+    background-color: var(--yellow-500);
+    color: var(--black);
+    overflow: hidden;
+}
+
+.maintain-consistent-schedule h2 {
+    font-size: 2.04rem;
+    font-weight: 530;
+    line-height: 1.8rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 1rem;
+}
+
+.maintain-consistent-schedule img {
+    width: 100%;
+}
+
+
+.schedule-to-social-media {
+    background-color: var(--purple-100);
+    color: var(--black);
+    padding: 3.2rem 2rem;
+    overflow: hidden;
+}
+
+.schedule-to-social-media h2 {
+    font-size: 2.05rem;
+    font-weight: 530;
+    letter-spacing: -0.1rem;
+    line-height: 1.8rem;
+}
+
+.schedule-to-social-media img {
+    margin: 1.2rem 0;
+    height: 19.9rem;
+}
+
+.schedule-to-social-media p {
+    line-height: 1.2rem;
+}
+
+.grow-followers {
+    background-color: var(--purple-500);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.grow-followers h2 {
+    font-size: 2.44rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+}
+
+.grow-followers img {
+    height: 100%;
+    width: auto;
+}
+
+.audience-growth {
+    background-color: var(--white);
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+.audience-growth h2 {
+    font-size: 3.8rem;
+    font-weight: 540;
+    margin-bottom: 0.1rem;
+    position: relative;
+    right: 0.2rem;
+}
+
+.audience-growth h2 span {
+    padding-bottom: 2rem;
+    position: relative;
+    top: -0.3rem;
+    left: 0.1rem;
+}
+
+.audience-growth p {
+    font-size: 1.13rem;
+    margin-bottom: 2rem;
+}
+
+.audience-growth img {
+    height: 4.14rem;
+}
+
+.create-post {
+    background-color: var(--yellow-100);
+    margin: 0.4rem 0.6rem;
+}
+
+.create-post h2 {
+    margin-top: 3.3rem;
+    margin-bottom: 1.44rem;
+    line-height: 2.24rem;
+    font-size: 2.47rem;
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    color: var(--black);
+}
+
+.create-post span {
+    color: var(--purple-500);
+    font-style: italic;
+}
+
+.create-post img {
+    height: 5.7rem;
+}
+
+.content-with-ai {
+    background-color: var(--yellow-500);
+    color: var(--black);
+    padding-right: 0.9rem;
+}
+
+.content-with-ai h2 {
+    margin-right: 1rem;
+    font-size: 2.47rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    line-height: 2.3rem;
+    margin-bottom: 3.2rem;
+}
+
+.content-with-ai img {
+    height: 14rem;
+    width: auto;
+}
+
+
+/* media queries for tablets */
+
+/* media queries for tablets - improved version */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    main {
+        padding: 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "card7 card4"
+            "card3 card4"
+            "card1 card1"
+            "card8 card2"
+            "card8 card6"
+            "card5 card5";
+        gap: 1.5rem;
+    }
+
+    .content-with-ai img {
+        height: 19rem;
+    }
+
+}
+
+/* media queries for mobiles */
+@media only screen and (max-width: 480px) {
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: none;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7,
+    .card8 {
+        grid-area: unset !important;
+    }
+
+    .social-media-with-ai h2 {
+        font-size: 2.95rem;
+        padding-top: 0.8rem;
+        padding-bottom: 1.1rem;
+        line-height: 2.8rem;
+    }
+
+    .social-media-with-ai p {
+        margin-bottom: 1rem;
+    }
+
+    .manage-platform img {
+        width: 100%;
+        height: auto;
+    }
+
+    .manage-platform h2 {
+        font-size: 1.6rem;
+        margin-top: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .maintain-consistent-schedule {
+        padding: 1rem;
+        overflow: hidden;
+        position: relative;
+        min-height: 15rem;
+    }
+
+    .maintain-consistent-schedule h2 {
+        font-size: 1.7rem;
+        line-height: 1.5rem;
+    }
+
+    .maintain-consistent-schedule img {
+        position: absolute;
+        height: 13rem;
+        width: auto;
+    }
+
+    .schedule-to-social-media {
+        padding: 1rem 1.4rem;
+    }
+
+    .schedule-to-social-media h2 {
+        font-size: 1.6rem;
+    }
+
+    .schedule-to-social-media img {
+        width: 100%;
+        height: auto;
+    }
+
+    .schedule-to-social-media p {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0 0.2rem;
+    }
+
+    .grow-followers {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .grow-followers img {
+        height: 12.5rem;
+        width: auto;
+    }
+
+    .grow-followers h2 {
+        padding: 0 2rem;
+        font-size: 1.9rem;
+        line-height: 1.8rem;
+        color: hsla(0, 0%, 100%, 0.7);
+        text-align: center;
+    }
+
+    .audience-growth h2 {
+        font-size: 3rem;
+    }
+
+    .audience-growth p {
+        font-size: 1.2rem;
+    }
+
+    .create-post h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 0.4rem;
+    }
+
+    .content-with-ai h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .content-with-ai img {
+        width: 14rem;
+        height: auto;
+    }
+}
